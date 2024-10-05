@@ -48,15 +48,15 @@ export default function Page() {
         </div>
       </section>
       <section id="about">
-  <BlurFade delay={BLUR_FADE_DELAY * 3}>
-    <h2 className="text-xl font-bold">About</h2>
-  </BlurFade>
-  <BlurFade delay={BLUR_FADE_DELAY * 4}>
-    <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-      {`When I was 9 years old I made my first game Swing which was released on itch io then I moved on to alogrithms and pyhton logic, learning the basics. Then I learned html and css, which I made a website where you could play games in class unnoticed. Then in 2024 I moved on to saas by releasing my first AI saas, Codey AI.`}
-    </Markdown>
-  </BlurFade>
-</section>
+        <BlurFade delay={BLUR_FADE_DELAY * 3}>
+          <h2 className="text-xl font-bold">About</h2>
+        </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 4}>
+          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+            {DATA.summary}
+          </Markdown>
+        </BlurFade>
+      </section>
 
       <section id="projects">
         <div className="space-y-12 w-full py-12">
